@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <table style="border:1px solid #b5b5b5; padding:1px; margin:1px;">
+        <tr>
+
+        </tr>
+    </table>
+    <button class="btn">request</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/request_school_code.js"></script>
+    <script>
+        console.log(getSchoolCode("", ""));
+        axios.get(getSchoolCode("", "")).then(res => {
+            console.log(res);
+        })
+    </script>
+</body>
+</html>
